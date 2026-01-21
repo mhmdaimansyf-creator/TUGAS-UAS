@@ -1,0 +1,115 @@
+:root {
+    --primary: #2575fc;
+    --secondary: #6a11cb;
+    --glass: rgba(255, 255, 255, 0.2);
+    --text: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('mlbb.png');
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    overflow-x: hidden;
+    color: var(--text);
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo { font-size: 50px; margin-bottom: 10px; }
+h1 { font-size: 2.5rem; text-shadow: 2px 2px 10px rgb(255, 252, 252); }
+
+.badge-container {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.badge {
+    background: var(--glass);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid white(255,255,255,0.3);
+}
+
+/* Glassmorphism Container */
+.glass-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+}
+
+.card {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1;
+    min-width: 320px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.card h2 { margin-bottom: 20px; font-size: 1.4rem; }
+
+/* Form Style */
+.input-box { margin-bottom: 15px; }
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    color: white;
+    outline: none;
+}
+input::placeholder { color: rgba(255,255,255,0.7); }
+option { color: #333; }
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #2575fc;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover { transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
+
+/* Table Style */
+.stats-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.counter-pill { background: #ffffff; color: #2575fc; padding: 5px 15px; border-radius: 15px; font-weight: bold; }
+
+.table-wrapper { height: 300px; overflow-y: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+th { color: rgba(255,255,255,0.7); font-size: 0.8rem; text-transform: uppercase; }
+
+/* Message */
+#message { margin-top: 15px; text-align: center; font-weight: bold; }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esport Event Campus 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🏆</div>
+        <h1>Campus Esport Championship 2026</h1><br>
+        <p>Tunjukkan bakatmu, jadilah sang juara!</p>
+        <div class="badge-container">
+            <span class="badge">📅 20 Mei 2026</span>
+            <span class="badge">📍 VENUE PIK 2</span>
+        </div>
+    </header>
+
+    <main class="glass-container">
+        <section class="card">
+            <h2>Formulir Pendaftaran</h2>
+            <form id="registrationForm">
+                <div class="input-box">
+                    <input type="text" id="nama" required placeholder="Nama Lengkap">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="email" required placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="text" id="nohp" required placeholder="Nomor HP">
+                </div>
+                <div class="input-box">
+                    <select id="kategori" required>
+                        <option value="" disabled selected>Pilih Kategori</option>
+                        <option value="Mahasiswa">Mahasiswa</option>
+                        <option value="Umum">Umum</option>
+                    </select>
+                </div>
+                <button type="submit" id="btnDaftar">Daftar Sekarang</button>
+            </form>
+            <p id="message"></p>
+        </section>
+
+        <section class="card">
+            <div class="stats-header">
+                <h2>Statistik Peserta</h2>
+                <div class="counter-pill">
+                    <span id="count">0</span> / 50 Terisi
+                </div>
+            </div>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama Peserta</th>
+                            <th>Kategori</th>
+                        </tr>
+                    </thead>
+                    <tbody id="participantList">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
